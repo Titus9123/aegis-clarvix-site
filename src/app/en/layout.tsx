@@ -41,11 +41,17 @@ export const metadata: Metadata = {
     siteName: "Aegis by Clarvix",
     locale: "en_US",
     alternateLocale: "he_IL",
+    // Static PNG in public/ rather than the opengraph-image.tsx convention:
+    // GitHub Pages infers content-type from the file extension, and an
+    // extensionless file is served as application/octet-stream, which the
+    // WhatsApp and LinkedIn crawlers discard.
+    images: [{ url: "/og-en.png", width: 1200, height: 630, alt: "Aegis by Clarvix" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aegis by Clarvix",
     description: "Find out what's exposed about your business online — before someone else does.",
+    images: ["/og-en.png"],
   },
   robots: {
     index: true,

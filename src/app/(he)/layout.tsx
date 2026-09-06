@@ -42,11 +42,17 @@ export const metadata: Metadata = {
     siteName: "Aegis by Clarvix",
     locale: "he_IL",
     alternateLocale: "en_US",
+    // PNG estático en public/ y no la convención opengraph-image.tsx: GitHub
+    // Pages deduce el content-type por la extensión, y un archivo sin
+    // extensión se sirve como application/octet-stream, que los crawlers de
+    // WhatsApp y LinkedIn descartan.
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Aegis by Clarvix" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aegis by Clarvix",
     description: "גלו מה מהעסק שלכם חשוף באינטרנט — לפני שמישהו אחר יגלה.",
+    images: ["/og.png"],
   },
   robots: {
     index: true,

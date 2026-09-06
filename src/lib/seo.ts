@@ -49,7 +49,7 @@ export function organizationJsonLd(lang: Lang) {
     url: `${SITE_URL}${localePath(lang)}`,
     inLanguage: lang,
     logo: `${SITE_URL}/brand/aegis-shield.png`,
-    image: `${SITE_URL}/brand/aegis-shield.png`,
+    image: `${SITE_URL}${lang === "en" ? "/og-en.png" : "/og.png"}`,
     email: CONTACT.email,
     telephone: `+${CONTACT.whatsapp}`,
     address: {
