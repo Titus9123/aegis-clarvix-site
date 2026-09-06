@@ -22,6 +22,7 @@ export function Header() {
   const links = [
     { href: "#services", label: t.nav.services },
     { href: "#builders", label: t.nav.builders },
+    { href: "#coverage", label: t.nav.coverage },
     { href: "#trust", label: t.nav.trust },
     { href: "#faq", label: t.nav.faq },
   ];

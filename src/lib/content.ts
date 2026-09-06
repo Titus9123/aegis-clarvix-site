@@ -6,6 +6,7 @@ export const content = {
     nav: {
       services: "שירותים",
       builders: "לבעלי סטארטאפ",
+      coverage: "מה אנחנו בודקים",
       trust: "למה לבחור בנו",
       faq: "שאלות נפוצות",
       contact: "יצירת קשר",
@@ -132,6 +133,7 @@ export const content = {
     nav: {
       services: "Services",
       builders: "For Builders",
+      coverage: "What We Check",
       trust: "Why Us",
       faq: "FAQ",
       contact: "Contact",

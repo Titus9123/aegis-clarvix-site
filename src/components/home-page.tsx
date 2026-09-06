@@ -4,6 +4,7 @@ import { RegulatoryBanner } from "@/components/regulatory-banner";
 import { ScanDemo } from "@/components/scan-demo";
 import { ServicesSection } from "@/components/services-section";
 import { BuilderSection } from "@/components/builder-section";
+import { SecurityTopicsSection } from "@/components/security-topics-section";
 import { TrustSection } from "@/components/trust-section";
 import { FaqSection } from "@/components/faq-section";
 import { CtaSection } from "@/components/cta-section";
@@ -27,6 +28,9 @@ export function HomePage() {
         </Reveal>
         <Reveal>
           <BuilderSection />
+        </Reveal>
+        <Reveal>
+          <SecurityTopicsSection />
         </Reveal>
         <Reveal>
           <TrustSection />
