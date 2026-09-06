@@ -33,6 +33,7 @@ export const content = {
           "תעודות אבטחה ו-TLS",
           "אתר ו-CMS ציבורי",
           "בדיקת עמידה בתיקון 13 לחוק הגנת הפרטיות",
+          "מפתחות API חשופים והרשאות Supabase/Firebase (לאפליקציות שנבנו עם AI)",
           "דוח מנהלים + דוח טכני",
           "בדיקה חוזרת אחת",
         ],
@@ -43,8 +44,7 @@ export const content = {
     builders: {
       eyebrow: "לבעלי סטארטאפ בודדים",
       title: "בניתם משהו עם Lovable, Base44 או Replit?",
-      body: "98% מהאפליקציות שנבנו עם כלי AI מכילות לפחות פרצת אבטחה אחת — הרוב בגלל מפתחות API חשופות או הרשאות Supabase שגויות. אנחנו בודקים את זה, ומישהו אמיתי מסביר לכם מה לתקן.",
-      price: "₪450 · מחיר קבוע",
+      body: "98% מהאפליקציות שנבנו עם כלי AI מכילות לפחות פרצת אבטחה אחת — הרוב בגלל מפתחות API חשופות או הרשאות Supabase שגויות. אותה בדיקת אבטחה שלנו מכסה גם את זה.",
       cta: "בדקו את האפליקציה שלי",
     },
     trust: {
@@ -124,6 +124,7 @@ export const content = {
           "Certificates and TLS",
           "Public website and CMS",
           "Readiness check against Amendment 13 of Israel's Privacy Law",
+          "Exposed API keys and Supabase/Firebase permissions (for AI-built apps)",
           "Executive + technical report",
           "One retest included",
         ],
@@ -134,8 +135,7 @@ export const content = {
     builders: {
       eyebrow: "For solo founders",
       title: "Built something with Lovable, Base44, or Replit?",
-      body: "98% of apps built with AI tools ship with at least one security flaw — most from exposed API keys or misconfigured Supabase permissions. We check for that, and a real person explains what to fix.",
-      price: "₪450 · fixed price",
+      body: "98% of apps built with AI tools ship with at least one security flaw — most from exposed API keys or misconfigured Supabase permissions. The same security check we run for any business covers this too.",
       cta: "Check my app",
     },
     trust: {

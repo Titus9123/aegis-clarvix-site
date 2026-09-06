@@ -24,7 +24,7 @@ export function BuilderSection() {
           </h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">{t.builders.body}</p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-4">
+          <div className="mt-6">
             <Button
               className="gap-2 bg-primary text-primary-foreground transition-transform duration-200 hover:scale-[1.03] hover:bg-primary/90 active:scale-[0.97]"
               nativeButton={false}
@@ -33,9 +33,6 @@ export function BuilderSection() {
               <MessageCircle className="h-4 w-4" />
               {t.builders.cta}
             </Button>
-            <span className="font-heading text-lg font-semibold text-foreground">
-              {t.builders.price}
-            </span>
           </div>
         </div>
       </div>
