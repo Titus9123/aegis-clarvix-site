@@ -14,23 +14,25 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { whatsappHref } from "@/lib/whatsapp";
+import { localePath } from "@/lib/seo";
 
 export function Header() {
   const { t, lang } = useLanguage();
   const [open, setOpen] = useState(false);
+  const home = localePath(lang, "/");
 
   const links = [
-    { href: "#services", label: t.nav.services },
-    { href: "#builders", label: t.nav.builders },
-    { href: "#coverage", label: t.nav.coverage },
-    { href: "#trust", label: t.nav.trust },
-    { href: "#faq", label: t.nav.faq },
+    { href: `${home}#services`, label: t.nav.services },
+    { href: `${home}#builders`, label: t.nav.builders },
+    { href: `${home}#coverage`, label: t.nav.coverage },
+    { href: `${home}#trust`, label: t.nav.trust },
+    { href: `${home}#faq`, label: t.nav.faq },
   ];
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="shrink-0">
+        <a href={home} className="shrink-0">
           <Logo />
         </a>
 
