@@ -1,22 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://aegis.clarvix.net/</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://aegis.clarvix.net/en</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://aegis.clarvix.net/terms</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/terms" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://aegis.clarvix.net/en/terms</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/terms" />
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://aegis.clarvix.net/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/privacy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://aegis.clarvix.net/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/privacy" />
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://aegis.clarvix.net/disclaimer</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/disclaimer" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/disclaimer" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://aegis.clarvix.net/en/disclaimer</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/disclaimer" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/disclaimer" />
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

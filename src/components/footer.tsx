@@ -6,6 +6,7 @@ import { useLanguage } from "@/components/language-provider";
 import { Logo } from "@/components/logo";
 import { CONTACT } from "@/lib/content";
 import { whatsappHref, mailtoHref } from "@/lib/whatsapp";
+import { localePath } from "@/lib/seo";
 
 export function Footer() {
   const { t, lang } = useLanguage();
@@ -48,13 +49,13 @@ export function Footer() {
             © {new Date().getFullYear()} Aegis by Clarvix — {t.footer.rights}
           </span>
           <nav className="flex items-center gap-4">
-            <Link href="/terms" className="hover:text-foreground">
+            <Link href={localePath(lang, "/terms")} className="hover:text-foreground">
               {t.footer.links.terms}
             </Link>
-            <Link href="/privacy" className="hover:text-foreground">
+            <Link href={localePath(lang, "/privacy")} className="hover:text-foreground">
               {t.footer.links.privacy}
             </Link>
-            <Link href="/disclaimer" className="hover:text-foreground">
+            <Link href={localePath(lang, "/disclaimer")} className="hover:text-foreground">
               {t.footer.links.disclaimer}
             </Link>
           </nav>

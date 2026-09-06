@@ -18,10 +18,13 @@ Aegis is a service by Clarvix. It is a passive, external security assessment —
 
 ## Pages
 
-- [Home](https://aegis.clarvix.net/) — offer, FAQ, and contact.
-- [Terms of Use](https://aegis.clarvix.net/terms)
-- [Privacy Policy](https://aegis.clarvix.net/privacy)
-- [Disclaimer](https://aegis.clarvix.net/disclaimer)
+Available in Hebrew (default) and English (`/en` prefix), each independently
+server-rendered — not a client-side toggle.
+
+- [Home (Hebrew)](https://aegis.clarvix.net/) / [Home (English)](https://aegis.clarvix.net/en) — offer, FAQ, and contact.
+- [Terms of Use (Hebrew)](https://aegis.clarvix.net/terms) / [English](https://aegis.clarvix.net/en/terms)
+- [Privacy Policy (Hebrew)](https://aegis.clarvix.net/privacy) / [English](https://aegis.clarvix.net/en/privacy)
+- [Disclaimer (Hebrew)](https://aegis.clarvix.net/disclaimer) / [English](https://aegis.clarvix.net/en/disclaimer)
 
 ## Contact
 

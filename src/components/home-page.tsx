@@ -10,7 +10,7 @@ import { CtaSection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
 import { Reveal } from "@/components/reveal";
 
-export default function Home() {
+export function HomePage() {
   return (
     <>
       <Header />
