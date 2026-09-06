@@ -68,11 +68,8 @@ export function ScanDemo() {
 
   return (
     <div ref={containerRef} className="mx-auto max-w-2xl px-6">
-      <div
-        dir="ltr"
-        className="overflow-hidden rounded-xl border border-border/60 bg-card/80 shadow-[0_0_40px_rgba(0,240,217,0.08)]"
-      >
-        <div className="flex items-center gap-1.5 border-b border-border/60 px-4 py-2.5">
+      <div className="overflow-hidden rounded-xl border border-border/60 bg-card/80 shadow-[0_0_40px_rgba(0,240,217,0.08)]">
+        <div dir="ltr" className="flex items-center gap-1.5 border-b border-border/60 px-4 py-2.5">
           <span className="h-2.5 w-2.5 rounded-full bg-destructive/70" />
           <span className="h-2.5 w-2.5 rounded-full bg-accent/70" />
           <span className="h-2.5 w-2.5 rounded-full bg-primary/70" />
@@ -82,11 +79,11 @@ export function ScanDemo() {
         </div>
         <div className="min-h-[220px] p-5 font-mono text-sm leading-relaxed">
           {visibleLines.map((line, i) => (
-            <div key={i} className={lineColor(line)}>
+            <div key={i} dir="auto" className={lineColor(line)}>
               {line}
             </div>
           ))}
-          <div className={lineColor(typed)}>
+          <div dir="auto" className={lineColor(typed)}>
             {typed}
             <span className="ms-0.5 inline-block h-4 w-2 animate-pulse bg-primary align-middle" />
           </div>
