@@ -1,7 +1,7 @@
 export const about = {
   he: {
     eyebrow: "מי עומד מאחורי הבדיקה",
-    title: "שלום, אני אלברט",
+    title: "שלום, אני אלברט נוימן",
     role: "מומחה אבטחת מידע עצמאי",
     lead: "אני מפעיל את Aegis, שירות של Clarvix שבודק מה מהעסק שלכם חשוף באינטרנט. כל דוח שיוצא מכאן עובר דרכי אישית לפני שהוא מגיע אליכם — זה לא פלט אוטומטי עם לוגו.",
     sections: [
@@ -27,7 +27,7 @@ export const about = {
   },
   en: {
     eyebrow: "Who runs the assessment",
-    title: "Hi, I'm Albert",
+    title: "Hi, I'm Albert Neumann",
     role: "Independent cybersecurity professional",
     lead: "I run Aegis, a service by Clarvix that finds what's exposed about your business online. Every report that goes out passes through me personally before it reaches you — it isn't automated output with a logo on it.",
     sections: [

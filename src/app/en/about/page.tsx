@@ -3,9 +3,9 @@ import { AboutPage } from "@/components/about-page";
 import { localeAlternates } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Who runs Aegis — Albert, independent cybersecurity professional",
+  title: "Who runs Aegis — Albert Neumann, independent cybersecurity professional",
   description:
-    "Albert, an independent cybersecurity professional, runs Aegis by Clarvix. Every finding is reviewed by a person before it reaches you — not raw scanner output.",
+    "Albert Neumann, an independent cybersecurity professional, runs Aegis by Clarvix. Every finding is reviewed by a person before it reaches you — not raw scanner output.",
   alternates: localeAlternates("en", "/about"),
 };
 

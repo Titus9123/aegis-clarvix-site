@@ -5,7 +5,7 @@ export const SITE_URL = "https://aegis.clarvix.net";
 
 /** Persona real detrás del servicio. Se usa como autor y fundador en el schema. */
 export const AUTHOR = {
-  name: "Albert",
+  name: "Albert Neumann",
   jobTitle: { he: "מומחה אבטחת מידע עצמאי", en: "Independent cybersecurity professional" },
   url: `${SITE_URL}/about`,
 };
