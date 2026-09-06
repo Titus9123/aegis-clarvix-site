@@ -65,10 +65,6 @@ export const content = {
       title: "לא רק דוח אוטומטי",
       items: [
         {
-          title: "הכשרה מוסמכת",
-          desc: "360 שעות אקדמיות של קורס בדיקות חדירה ואבטחת מידע, עם דגש על אימות ולא רק סריקה.",
-        },
-        {
           title: "בקרת איכות אנושית",
           desc: "כל ממצא עובר בדיקה אנושית לפני שהוא מגיע אליכם — לא מעתיקים פלט גולמי של כלי סריקה.",
         },
@@ -172,10 +168,6 @@ export const content = {
       eyebrow: "Why us",
       title: "Not just an automated report",
       items: [
-        {
-          title: "Certified training",
-          desc: "360 academic hours of penetration testing and security training, with a focus on verification, not just scanning.",
-        },
         {
           title: "Human quality control",
           desc: "Every finding is reviewed by a person before it reaches you — never raw scanner output.",

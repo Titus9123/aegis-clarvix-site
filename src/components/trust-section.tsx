@@ -1,9 +1,9 @@
 "use client";
 
-import { GraduationCap, UserCheck, RotateCcw, ShieldOff } from "lucide-react";
+import { UserCheck, RotateCcw, ShieldOff } from "lucide-react";
 import { useLanguage } from "@/components/language-provider";
 
-const icons = [GraduationCap, UserCheck, RotateCcw, ShieldOff];
+const icons = [UserCheck, RotateCcw, ShieldOff];
 
 export function TrustSection() {
   const { t } = useLanguage();
@@ -19,7 +19,7 @@ export function TrustSection() {
         </h2>
       </div>
 
-      <div className="mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-2">
+      <div className="mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-3">
         {t.trust.items.map((item, i) => {
           const Icon = icons[i];
           return (
