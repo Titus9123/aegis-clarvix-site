@@ -26,7 +26,7 @@ export function BuilderSection() {
 
           <div className="mt-6 flex flex-wrap items-center gap-4">
             <Button
-              className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90"
+              className="gap-2 bg-primary text-primary-foreground transition-transform duration-200 hover:scale-[1.03] hover:bg-primary/90 active:scale-[0.97]"
               nativeButton={false}
               render={<a href={whatsappHref(lang)} target="_blank" rel="noopener noreferrer" />}
             >

@@ -1,11 +1,20 @@
+"use client";
+
+import { motion, useReducedMotion } from "framer-motion";
+
 export function CircuitBackdrop({ className }: { className?: string }) {
+  const reduceMotion = useReducedMotion();
+
   return (
-    <svg
+    <motion.svg
       className={className}
       viewBox="0 0 800 600"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
+      initial={{ opacity: 0.35 }}
+      animate={reduceMotion ? { opacity: 0.35 } : { opacity: [0.2, 0.5, 0.2] }}
+      transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
     >
       <g stroke="#00F0D9" strokeWidth="1.5" opacity="0.35">
         <path d="M0 120H220V60H460V180H800" />
@@ -32,6 +41,6 @@ export function CircuitBackdrop({ className }: { className?: string }) {
         <circle cx="180" cy="480" r="4" />
         <circle cx="620" cy="480" r="4" />
       </g>
-    </svg>
+    </motion.svg>
   );
 }

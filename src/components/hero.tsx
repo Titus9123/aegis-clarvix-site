@@ -30,7 +30,7 @@ export function Hero() {
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Button
             size="lg"
-            className="gap-2 bg-primary text-primary-foreground shadow-[0_0_24px_rgba(0,240,217,0.35)] hover:bg-primary/90"
+            className="gap-2 bg-primary text-primary-foreground shadow-[0_0_24px_rgba(0,240,217,0.35)] transition-transform duration-200 hover:scale-[1.03] hover:bg-primary/90 active:scale-[0.97]"
             nativeButton={false}
             render={<a href={whatsappHref(lang)} target="_blank" rel="noopener noreferrer" />}
           >

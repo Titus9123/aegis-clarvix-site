@@ -82,6 +82,20 @@ export const content = {
         },
       ],
     },
+    scanDemo: {
+      label: "כך זה נראה",
+      lines: [
+        "$ aegis scan clarvix.net",
+        "מאתר דומיין ותת-דומיינים...",
+        "בודק SPF, DKIM, DMARC...",
+        "בודק תעודות TLS...",
+        "✓ נמצאו 6 תת-דומיינים",
+        "✓ TLS: ציון A+",
+        "⚠ 3 ממצאים דורשים תשומת לב",
+        "בונה דוח...",
+        "✓ הדוח מוכן",
+      ],
+    },
     cta: {
       title: "מוכנים לדעת מה חשוף?",
       body: "שיחת היכרות קצרה, בלי עלות ובלי התחייבות.",
@@ -174,6 +188,20 @@ export const content = {
           title: "No overblown promises",
           desc: "Nobody can guarantee absolute security, and we won't pretend to.",
         },
+      ],
+    },
+    scanDemo: {
+      label: "Here's what it looks like",
+      lines: [
+        "$ aegis scan clarvix.net",
+        "resolving domain and subdomains...",
+        "checking SPF, DKIM, DMARC...",
+        "checking TLS certificates...",
+        "✓ found 6 subdomains",
+        "✓ TLS: grade A+",
+        "⚠ 3 findings need attention",
+        "building report...",
+        "✓ report ready",
       ],
     },
     cta: {

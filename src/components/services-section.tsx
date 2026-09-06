@@ -29,7 +29,7 @@ export function ServicesSection() {
         {t.services.items.map((item) => (
           <Card
             key={item.title}
-            className="border-border/60 bg-card/60 transition-colors hover:border-primary/40"
+            className="border-border/60 bg-card/60 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_12px_40px_rgba(0,240,217,0.12)]"
           >
             <CardHeader>
               <CardTitle className="font-heading text-xl">{item.title}</CardTitle>

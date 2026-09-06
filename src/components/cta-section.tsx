@@ -19,7 +19,7 @@ export function CtaSection() {
         <p className="mt-3 text-muted-foreground">{t.cta.body}</p>
         <Button
           size="lg"
-          className="mt-8 gap-2 bg-primary text-primary-foreground shadow-[0_0_24px_rgba(0,240,217,0.35)] hover:bg-primary/90"
+          className="mt-8 gap-2 bg-primary text-primary-foreground shadow-[0_0_24px_rgba(0,240,217,0.35)] transition-transform duration-200 hover:scale-[1.03] hover:bg-primary/90 active:scale-[0.97]"
           nativeButton={false}
           render={<a href={whatsappHref(lang)} target="_blank" rel="noopener noreferrer" />}
         >
