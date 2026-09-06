@@ -53,6 +53,10 @@ function AccordionContent({
   return (
     <AccordionPrimitive.Panel
       data-slot="accordion-content"
+      // hidden="until-found": el panel queda en el HTML servido aunque esté
+      // cerrado, así los buscadores y los crawlers de IA (que no ejecutan JS)
+      // sí ven el contenido, Ctrl+F lo encuentra y el panel se abre solo.
+      hiddenUntilFound
       className="overflow-hidden text-sm data-open:animate-accordion-down data-closed:animate-accordion-up"
       {...props}
     >

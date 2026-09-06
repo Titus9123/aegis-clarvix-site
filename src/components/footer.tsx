@@ -49,6 +49,9 @@ export function Footer() {
             © {new Date().getFullYear()} Aegis by Clarvix — {t.footer.rights}
           </span>
           <nav className="flex items-center gap-4">
+            <Link href={localePath(lang, "/about")} className="hover:text-foreground">
+              {t.nav.about}
+            </Link>
             <Link href={localePath(lang, "/terms")} className="hover:text-foreground">
               {t.footer.links.terms}
             </Link>

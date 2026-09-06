@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Aegis by Clarvix — אבטחת סייבר לעסקים קטנים ובינוניים",
   description:
-    "מגלים מה חשוף מהעסק שלכם באינטרנט, מסבירים בעברית פשוטה, ומוודאים שהתיקון עבד. בדיקות אבטחה לעסקים קטנים ולסטארטאפים בודדים בישראל, כולל בדיקת עמידה בתיקון 13 לחוק הגנת הפרטיות.",
+    "מגלים מה חשוף מהעסק שלכם באינטרנט, מסבירים בעברית פשוטה, ומוודאים שהתיקון עבד. בדיקת אבטחה לעסקים קטנים בישראל — מחיר קבוע ₪1,990, כולל בדיקה חוזרת.",
   keywords: [
     "אבטחת מידע לעסקים קטנים",
     "בדיקת חשיפה חיצונית",
@@ -42,6 +42,11 @@ export const metadata: Metadata = {
     siteName: "Aegis by Clarvix",
     locale: "he_IL",
     alternateLocale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aegis by Clarvix",
+    description: "גלו מה מהעסק שלכם חשוף באינטרנט — לפני שמישהו אחר יגלה.",
   },
   robots: {
     index: true,

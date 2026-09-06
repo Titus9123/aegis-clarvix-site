@@ -15,6 +15,14 @@ export function RegulatoryBanner() {
             {t.regulatory.title}
           </p>
           <p className="mt-1 text-sm text-muted-foreground">{t.regulatory.body}</p>
+          <a
+            href={t.regulatory.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-block text-xs text-muted-foreground/80 underline underline-offset-2 hover:text-foreground"
+          >
+            {t.regulatory.sourceLabel}
+          </a>
         </div>
       </div>
     </section>

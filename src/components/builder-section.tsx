@@ -23,6 +23,14 @@ export function BuilderSection() {
             {t.builders.title}
           </h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">{t.builders.body}</p>
+          <a
+            href={t.builders.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-block text-xs text-muted-foreground/80 underline underline-offset-2 hover:text-foreground"
+          >
+            {t.builders.sourceLabel}
+          </a>
 
           <div className="mt-6">
             <Button

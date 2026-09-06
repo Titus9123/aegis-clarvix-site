@@ -4,6 +4,8 @@ import { RegulatoryBanner } from "@/components/regulatory-banner";
 import { ScanDemo } from "@/components/scan-demo";
 import { ServicesSection } from "@/components/services-section";
 import { BuilderSection } from "@/components/builder-section";
+import { DefinitionBlock } from "@/components/definition-block";
+import { ComparisonSection } from "@/components/comparison-section";
 import { SecurityTopicsSection } from "@/components/security-topics-section";
 import { TrustSection } from "@/components/trust-section";
 import { FaqSection } from "@/components/faq-section";
@@ -20,11 +22,17 @@ export function HomePage() {
         <Reveal>
           <RegulatoryBanner />
         </Reveal>
+        <Reveal>
+          <DefinitionBlock />
+        </Reveal>
         <div className="py-20">
           <ScanDemo />
         </div>
         <Reveal>
           <ServicesSection />
+        </Reveal>
+        <Reveal>
+          <ComparisonSection />
         </Reveal>
         <Reveal>
           <BuilderSection />

@@ -1,5 +1,14 @@
 import { HomePage } from "@/components/home-page";
+import { howToJsonLd } from "@/lib/seo";
 
 export default function Home() {
-  return <HomePage />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd("he")) }}
+      />
+      <HomePage />
+    </>
+  );
 }

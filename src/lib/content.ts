@@ -9,6 +9,7 @@ export const content = {
       coverage: "מה אנחנו בודקים",
       trust: "למה לבחור בנו",
       faq: "שאלות נפוצות",
+      about: "מי אנחנו",
       contact: "יצירת קשר",
     },
     hero: {
@@ -22,6 +23,30 @@ export const content = {
     regulatory: {
       title: "תיקון 13 לחוק הגנת הפרטיות כבר בתוקף",
       body: "תקופת החסד למינוי ממונה הגנת פרטיות הסתיימה באוקטובר 2025. רשות הגנת הפרטיות יכולה כעת להטיל קנסות של עד 5% מהמחזור השנתי.",
+      sourceLabel: "מקור: Library of Congress — Global Legal Monitor",
+      sourceUrl:
+        "https://www.loc.gov/item/global-legal-monitor/2025-11-17/israel-amendment-to-privacy-protection-law-goes-into-effect/",
+    },
+    definition: {
+      question: "מה זה בדיקת חשיפה חיצונית?",
+      answer:
+        "בדיקת חשיפה חיצונית היא סקירה של כל מה שהעסק שלכם חושף לאינטרנט הפתוח — דומיינים ותת-דומיינים, הגדרות מייל, תעודות אבטחה, אתר ציבורי ומפתחות שדלפו — שמבוצעת מבחוץ, בלי סיסמאות ובלי גישה למערכות שלכם, ומסתיימת ברשימה מתועדפת של מה לתקן קודם.",
+    },
+    comparison: {
+      eyebrow: "השוואה",
+      title: "איפה זה יושב מול האפשרויות האחרות",
+      note: "טווחי המחירים של פנטסט מלא בישראל ושל סורקים אוטומטיים לקוחים ממחקר שוק פומבי.",
+      sourceLabel: "מקור למחירי פנטסט בישראל: Astra",
+      sourceUrl: "https://www.getastra.com/pentest-services/israel",
+      columns: ["", "Aegis", "פנטסט מלא", "סורק אוטומטי"],
+      rows: [
+        ["מחיר", "₪1,990 קבוע", "₪15,000–150,000", "9–29$ לחודש"],
+        ["בקרה אנושית על כל ממצא", "כן", "כן", "לא"],
+        ["הסבר בשפה של בעל העסק", "כן", "בדרך כלל לא", "לא"],
+        ["בדיקה חוזרת כלולה", "כן", "לפעמים", "לא"],
+        ["ניסיון פריצה פעיל", "לא", "כן", "לא"],
+        ["זמן עד לתוצאות", "2–5 ימי עסקים", "שבועות", "מיידי"],
+      ],
     },
     services: {
       eyebrow: "השירות שלנו",
@@ -47,6 +72,9 @@ export const content = {
       eyebrow: "לבעלי סטארטאפ בודדים",
       title: "בניתם משהו עם Lovable, Base44 או Replit?",
       body: "98% מהאפליקציות שנבנו עם כלי AI מכילות לפחות פרצת אבטחה אחת — הרוב בגלל מפתחות API חשופות או הרשאות Supabase שגויות. אותה בדיקת אבטחה שלנו מכסה גם את זה.",
+      sourceLabel: "מקור: Symbiotic Security, סריקה של 1,072 אפליקציות",
+      sourceUrl:
+        "https://www.symbioticsec.ai/blog/we-scanned-1-072-vibe-coded-apps-98-had-security-flaws",
       cta: "בדקו את האפליקציה שלי",
     },
     trust: {
@@ -136,6 +164,7 @@ export const content = {
       coverage: "What We Check",
       trust: "Why Us",
       faq: "FAQ",
+      about: "About",
       contact: "Contact",
     },
     hero: {
@@ -150,6 +179,30 @@ export const content = {
     regulatory: {
       title: "Amendment 13 to Israel's Privacy Law is already in effect",
       body: "The grace period to appoint a privacy officer ended in October 2025. The Privacy Protection Authority can now fine up to 5% of annual revenue.",
+      sourceLabel: "Source: Library of Congress — Global Legal Monitor",
+      sourceUrl:
+        "https://www.loc.gov/item/global-legal-monitor/2025-11-17/israel-amendment-to-privacy-protection-law-goes-into-effect/",
+    },
+    definition: {
+      question: "What is an external exposure assessment?",
+      answer:
+        "An external exposure assessment is a review of everything your business exposes to the open internet — domains and subdomains, email configuration, security certificates, your public site, and leaked keys — performed from the outside, with no passwords and no access to your systems, ending in a prioritised list of what to fix first.",
+    },
+    comparison: {
+      eyebrow: "Comparison",
+      title: "Where this sits against the alternatives",
+      note: "Price ranges for full penetration tests in Israel and for self-serve scanners are taken from public market research.",
+      sourceLabel: "Source for Israeli pentest pricing: Astra",
+      sourceUrl: "https://www.getastra.com/pentest-services/israel",
+      columns: ["", "Aegis", "Full pentest", "Self-serve scanner"],
+      rows: [
+        ["Price", "₪1,990 fixed", "₪15,000–150,000", "$9–29 / month"],
+        ["Human review of every finding", "Yes", "Yes", "No"],
+        ["Explained in the owner's language", "Yes", "Usually not", "No"],
+        ["Retest included", "Yes", "Sometimes", "No"],
+        ["Active exploitation attempts", "No", "Yes", "No"],
+        ["Time to results", "2–5 business days", "Weeks", "Instant"],
+      ],
     },
     services: {
       eyebrow: "What we offer",
@@ -175,6 +228,9 @@ export const content = {
       eyebrow: "For solo founders",
       title: "Built something with Lovable, Base44, or Replit?",
       body: "98% of apps built with AI tools ship with at least one security flaw — most from exposed API keys or misconfigured Supabase permissions. The same security check we run for any business covers this too.",
+      sourceLabel: "Source: Symbiotic Security, scan of 1,072 apps",
+      sourceUrl:
+        "https://www.symbioticsec.ai/blog/we-scanned-1-072-vibe-coded-apps-98-had-security-flaws",
       cta: "Check my app",
     },
     trust: {

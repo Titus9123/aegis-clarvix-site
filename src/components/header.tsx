@@ -27,6 +27,7 @@ export function Header() {
     { href: `${home}#coverage`, label: t.nav.coverage },
     { href: `${home}#trust`, label: t.nav.trust },
     { href: `${home}#faq`, label: t.nav.faq },
+    { href: localePath(lang, "/about"), label: t.nav.about },
   ];
 
   return (

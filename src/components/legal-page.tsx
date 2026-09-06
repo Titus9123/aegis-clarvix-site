@@ -4,6 +4,7 @@ import { useLanguage } from "@/components/language-provider";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { legal } from "@/lib/legal-content";
+import { breadcrumbJsonLd } from "@/lib/seo";
 
 export function LegalPage({ doc }: { doc: "terms" | "privacy" | "disclaimer" }) {
   const { lang } = useLanguage();
@@ -11,6 +12,12 @@ export function LegalPage({ doc }: { doc: "terms" | "privacy" | "disclaimer" }) 
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd(lang, `/${doc}`, content.title)),
+        }}
+      />
       <Header />
       <main className="mx-auto max-w-3xl px-6 py-20">
         <h1 className="font-heading text-3xl font-bold tracking-tight text-foreground sm:text-4xl">

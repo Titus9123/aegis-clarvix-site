@@ -21,7 +21,8 @@ Aegis is a service by Clarvix. It is a passive, external security assessment —
 Available in Hebrew (default) and English (`/en` prefix), each independently
 server-rendered — not a client-side toggle.
 
-- [Home (Hebrew)](https://aegis.clarvix.net/) / [Home (English)](https://aegis.clarvix.net/en) — offer, FAQ, and contact.
+- [Home (Hebrew)](https://aegis.clarvix.net/) / [Home (English)](https://aegis.clarvix.net/en) — offer, comparison table, a 22-topic security glossary (each with the risk and its mitigation), FAQ, and contact.
+- [About (Hebrew)](https://aegis.clarvix.net/about) / [English](https://aegis.clarvix.net/en/about) — Albert, the independent cybersecurity professional who runs the service and reviews every finding personally.
 - [Terms of Use (Hebrew)](https://aegis.clarvix.net/terms) / [English](https://aegis.clarvix.net/en/terms)
 - [Privacy Policy (Hebrew)](https://aegis.clarvix.net/privacy) / [English](https://aegis.clarvix.net/en/privacy)
 - [Disclaimer (Hebrew)](https://aegis.clarvix.net/disclaimer) / [English](https://aegis.clarvix.net/en/disclaimer)
