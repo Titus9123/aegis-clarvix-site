@@ -1,0 +1,41 @@
+# Aegis by Clarvix — robots.txt
+# Standard search crawlers: fully allowed.
+User-agent: *
+Allow: /
+
+# AI retrieval/citation crawlers — explicitly allowed (GEO: we want to be
+# discoverable and citable by AI answer engines, not just classic search).
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://aegis.clarvix.net/sitemap.xml

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Mail, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/components/language-provider";
 import { Logo } from "@/components/logo";
@@ -42,10 +43,21 @@ export function Footer() {
           {t.footer.disclaimer}
         </p>
 
-        <div className="mt-8 border-t border-border/60 pt-6 text-center text-xs text-muted-foreground">
+        <div className="mt-8 flex flex-col items-center gap-4 border-t border-border/60 pt-6 text-xs text-muted-foreground sm:flex-row sm:justify-between">
           <span>
             © {new Date().getFullYear()} Aegis by Clarvix — {t.footer.rights}
           </span>
+          <nav className="flex items-center gap-4">
+            <Link href="/terms" className="hover:text-foreground">
+              {t.footer.links.terms}
+            </Link>
+            <Link href="/privacy" className="hover:text-foreground">
+              {t.footer.links.privacy}
+            </Link>
+            <Link href="/disclaimer" className="hover:text-foreground">
+              {t.footer.links.disclaimer}
+            </Link>
+          </nav>
         </div>
       </div>
     </footer>

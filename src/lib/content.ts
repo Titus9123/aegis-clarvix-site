@@ -7,6 +7,7 @@ export const content = {
       services: "שירותים",
       builders: "לבעלי סטארטאפ",
       trust: "למה לבחור בנו",
+      faq: "שאלות נפוצות",
       contact: "יצירת קשר",
     },
     hero: {
@@ -65,6 +66,36 @@ export const content = {
         },
       ],
     },
+    faq: {
+      eyebrow: "שאלות נפוצות",
+      title: "שאלות שכדאי לשאול לפני שמתחילים",
+      items: [
+        {
+          q: "מה זה בדיקת חשיפה חיצונית?",
+          a: "בדיקה שמגלה מה מהעסק שלכם נראה מבחוץ באינטרנט — דומיינים ותת-דומיינים, הגדרות מייל, תעודות אבטחה, ואתר ציבורי — ומראה מה מכל זה מהווה סיכון אמיתי, לפי סדר עדיפות.",
+        },
+        {
+          q: "האם הבדיקה כוללת ניסיון פריצה פעיל?",
+          a: "לא. הבדיקה מבוצעת בשיטות פסיביות ושמרניות בלבד. אנחנו לא מנסים לנצל פרצות, לא שולחים פישינג, ולא עלולים להשבית שירות. אם בעתיד תרצו בדיקה אקטיבית מלאה, זה שירות נפרד עם היקף והרשאה שונים לגמרי.",
+        },
+        {
+          q: "כמה זמן לוקח לקבל תוצאות?",
+          a: "בדרך כלל בין יומיים לחמישה ימי עסקים, תלוי בהיקף הנכסים הדיגיטליים שלכם.",
+        },
+        {
+          q: "אנחנו עסק קטן בלי איש IT — זה מתאים לנו?",
+          a: "בדיוק בשביל זה נבנה השירות. הדוח כתוב בעברית פשוטה, בלי ז'רגון, ומיועד לבעל העסק ולא רק לאיש טכני.",
+        },
+        {
+          q: "מה ההבדל בין זה לסריקת אבטחה אוטומטית וחינמית?",
+          a: "סריקה אוטומטית נותנת רשימה גולמית של ממצאים בלי הקשר. אצלנו כל ממצא עובר בדיקה אנושית לפני שהוא מגיע אליכם, מתועדף לפי סיכון עסקי אמיתי, ומגיע עם בדיקה חוזרת שמוודאת שהתיקון עבד.",
+        },
+        {
+          q: "האם זה כולל בדיקת עמידה בתיקון 13 לחוק הגנת הפרטיות?",
+          a: "כן, זה חלק מובנה מהבדיקה — לא צריך לרכוש שירות נפרד בשביל זה.",
+        },
+      ],
+    },
     scanDemo: {
       label: "כך זה נראה",
       lines: [
@@ -89,6 +120,11 @@ export const content = {
       disclaimer:
         "השירות אינו כולל ניצול פרצות פעיל ואינו מהווה ערובה לאבטחה מוחלטת.",
       rights: "כל הזכויות שמורות",
+      links: {
+        terms: "תנאי שימוש",
+        privacy: "מדיניות פרטיות",
+        disclaimer: "כתב ויתור",
+      },
     },
   },
   en: {
@@ -97,6 +133,7 @@ export const content = {
       services: "Services",
       builders: "For Builders",
       trust: "Why Us",
+      faq: "FAQ",
       contact: "Contact",
     },
     hero: {
@@ -156,6 +193,36 @@ export const content = {
         },
       ],
     },
+    faq: {
+      eyebrow: "FAQ",
+      title: "Questions worth asking before you start",
+      items: [
+        {
+          q: "What is an external exposure check?",
+          a: "An assessment that finds out what your business looks like from the outside on the internet — domains and subdomains, email configuration, security certificates, and your public website — and shows which of that is a real risk, in priority order.",
+        },
+        {
+          q: "Does it include active exploitation attempts?",
+          a: "No. The assessment uses passive, conservative methods only. We don't attempt to exploit vulnerabilities, send phishing emails, or risk disrupting your service. If you ever want a full active penetration test, that's a separate service with a very different scope and authorization.",
+        },
+        {
+          q: "How long does it take to get results?",
+          a: "Usually between two and five business days, depending on the size of your digital footprint.",
+        },
+        {
+          q: "We're a small business with no IT staff — is this for us?",
+          a: "That's exactly who this was built for. The report is written in plain language, no jargon, for the business owner, not just a technical team.",
+        },
+        {
+          q: "What's the difference between this and a free automated scanner?",
+          a: "An automated scan gives you a raw list of findings with no context. Every finding we deliver is reviewed by a person first, prioritized by real business risk, and comes with a retest confirming the fix actually worked.",
+        },
+        {
+          q: "Does it cover Amendment 13 of Israel's Privacy Law?",
+          a: "Yes, that's built into the assessment — no separate service needed for it.",
+        },
+      ],
+    },
     scanDemo: {
       label: "Here's what it looks like",
       lines: [
@@ -180,6 +247,11 @@ export const content = {
       disclaimer:
         "This service does not include active exploitation and is not a guarantee of absolute security.",
       rights: "All rights reserved",
+      links: {
+        terms: "Terms of Use",
+        privacy: "Privacy Policy",
+        disclaimer: "Disclaimer",
+      },
     },
   },
 } as const;

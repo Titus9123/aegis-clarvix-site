@@ -1,0 +1,29 @@
+# Aegis by Clarvix
+
+> External cybersecurity exposure assessment for small and mid-size businesses and solo founders in Israel. Aegis discovers what's publicly exposed about a business online, explains the real risk in plain language, and verifies the fix — including a built-in readiness check against Amendment 13 of Israel's Privacy Protection Law.
+
+Aegis is a service by Clarvix. It is a passive, external security assessment — it does not perform active exploitation, phishing, or denial-of-service testing. Every automated finding is reviewed by a person before it reaches the client.
+
+## Service
+
+- Fixed price: ₪1,990, one-time.
+- Includes: domain and subdomain discovery, email authentication (SPF/DKIM/DMARC), TLS/certificate check, public website and CMS review, exposed secrets and API key checks (relevant to apps built with AI tools like Lovable, Base44, Replit, on Supabase/Firebase), Amendment 13 privacy-law readiness check, executive and technical report, one retest.
+- Delivery: 2–5 business days.
+- Does not include: active exploitation, penetration testing with credential attacks, phishing simulations, or any action that could disrupt production systems.
+
+## Audience
+
+- Israeli SMBs (roughly 10–100 employees) with no in-house security lead.
+- Solo founders and indie hackers who launched a product with AI coding tools and want it checked for common misconfigurations.
+
+## Pages
+
+- [Home](https://aegis.clarvix.net/) — offer, FAQ, and contact.
+- [Terms of Use](https://aegis.clarvix.net/terms)
+- [Privacy Policy](https://aegis.clarvix.net/privacy)
+- [Disclaimer](https://aegis.clarvix.net/disclaimer)
+
+## Contact
+
+- WhatsApp and email links are on the homepage.
+- Company: Clarvix (https://clarvix.net)

@@ -23,6 +23,7 @@ export function Header() {
     { href: "#services", label: t.nav.services },
     { href: "#builders", label: t.nav.builders },
     { href: "#trust", label: t.nav.trust },
+    { href: "#faq", label: t.nav.faq },
   ];
 
   return (

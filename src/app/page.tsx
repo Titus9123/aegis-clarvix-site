@@ -5,6 +5,7 @@ import { ScanDemo } from "@/components/scan-demo";
 import { ServicesSection } from "@/components/services-section";
 import { BuilderSection } from "@/components/builder-section";
 import { TrustSection } from "@/components/trust-section";
+import { FaqSection } from "@/components/faq-section";
 import { CtaSection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
 import { Reveal } from "@/components/reveal";
@@ -29,6 +30,9 @@ export default function Home() {
         </Reveal>
         <Reveal>
           <TrustSection />
+        </Reveal>
+        <Reveal>
+          <FaqSection />
         </Reveal>
         <Reveal>
           <CtaSection />
