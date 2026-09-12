@@ -22,7 +22,7 @@ export function LanguageToggle() {
     <Button
       variant="outline"
       size="sm"
-      className="border-border/60 font-medium"
+      className="h-11 min-w-11 border-border/60 font-medium sm:h-7 sm:min-w-0"
       nativeButton={false}
       render={
         <a href={href} aria-label={lang === "he" ? "Switch to English" : "עברית"} />

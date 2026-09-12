@@ -6,6 +6,7 @@
     <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/" />
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,6 +15,7 @@
     <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/" />
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -21,6 +23,8 @@
     <loc>https://aegis.clarvix.net/terms</loc>
     <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/terms" />
     <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/terms" />
+    <lastmod>2026-09-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -28,6 +32,8 @@
     <loc>https://aegis.clarvix.net/en/terms</loc>
     <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/terms" />
     <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/terms" />
+    <lastmod>2026-09-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -35,6 +41,8 @@
     <loc>https://aegis.clarvix.net/privacy</loc>
     <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/privacy" />
     <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/privacy" />
+    <lastmod>2026-09-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -42,6 +50,8 @@
     <loc>https://aegis.clarvix.net/en/privacy</loc>
     <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/privacy" />
     <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/privacy" />
+    <lastmod>2026-09-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -49,6 +59,8 @@
     <loc>https://aegis.clarvix.net/disclaimer</loc>
     <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/disclaimer" />
     <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/disclaimer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/disclaimer" />
+    <lastmod>2026-09-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -56,6 +68,26 @@
     <loc>https://aegis.clarvix.net/en/disclaimer</loc>
     <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/disclaimer" />
     <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/disclaimer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/disclaimer" />
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://aegis.clarvix.net/accessibility</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/accessibility" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/accessibility" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/accessibility" />
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://aegis.clarvix.net/en/accessibility</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/accessibility" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/accessibility" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/accessibility" />
+    <lastmod>2026-09-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

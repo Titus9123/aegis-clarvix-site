@@ -1,3 +1,6 @@
+import { CursorGlow } from "@/components/cursor-glow";
+import { NeonBackdrop } from "@/components/neon-backdrop";
+import { PowerRail } from "@/components/power-rail";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { RegulatoryBanner } from "@/components/regulatory-banner";
@@ -14,6 +17,9 @@ import { Reveal } from "@/components/reveal";
 export function HomePage() {
   return (
     <>
+      <NeonBackdrop />
+      <CursorGlow />
+      <PowerRail />
       <Header />
       <main>
         <Hero />

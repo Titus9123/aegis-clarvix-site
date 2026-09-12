@@ -6,6 +6,7 @@ import { Logo } from "@/components/logo";
 import { LanguageToggle } from "@/components/language-toggle";
 import { useLanguage } from "@/components/language-provider";
 import { Button } from "@/components/ui/button";
+import { Magnetic } from "@/components/magnetic";
 import {
   Sheet,
   SheetContent,
@@ -50,20 +51,29 @@ export function Header() {
 
         <div className="hidden items-center gap-3 md:flex">
           <LanguageToggle />
-          <Button
-            className="bg-primary text-primary-foreground hover:bg-primary/90"
-            nativeButton={false}
-            render={<a href={whatsappHref(lang)} target="_blank" rel="noopener noreferrer" />}
-          >
-            {t.nav.contact}
-          </Button>
+          <Magnetic strength={0.25}>
+            <Button
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
+              nativeButton={false}
+              render={<a href={whatsappHref(lang)} target="_blank" rel="noopener noreferrer" />}
+            >
+              {t.nav.contact}
+            </Button>
+          </Magnetic>
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
           <LanguageToggle />
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger
-              render={<Button variant="ghost" size="icon" aria-label="Menu" />}
+              render={
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  aria-label="Menu"
+                  className="size-11"
+                />
+              }
             >
               <Menu className="h-5 w-5" />
             </SheetTrigger>
@@ -85,7 +95,7 @@ export function Header() {
                   </a>
                 ))}
                 <Button
-                  className="mt-4 bg-primary text-primary-foreground hover:bg-primary/90"
+                  className="mt-4 h-11 bg-primary text-primary-foreground hover:bg-primary/90"
                   nativeButton={false}
                   render={
                     <a href={whatsappHref(lang)} target="_blank" rel="noopener noreferrer" />

@@ -95,3 +95,35 @@
     @apply font-sans;
   }
 }
+
+/* Accessibility widget (src/components/accessibility-widget.tsx). Toggled by
+   adding/removing classes and a CSS var on <html> — see accessibility-provider.tsx. */
+html {
+  font-size: calc(100% * var(--a11y-font-scale, 1));
+}
+
+.a11y-contrast {
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: #000000;
+  --card-foreground: #ffffff;
+  --popover: #000000;
+  --popover-foreground: #ffffff;
+  --secondary: #000000;
+  --secondary-foreground: #ffffff;
+  --muted: #000000;
+  --muted-foreground: #ffffff;
+  --border: #ffffff;
+  --input: #ffffff;
+  --primary: #00ffe6;
+  --primary-foreground: #000000;
+}
+
+.a11y-grayscale {
+  filter: grayscale(1);
+}
+
+.a11y-underline-links a {
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}

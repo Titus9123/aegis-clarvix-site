@@ -1,3 +1,12 @@
+import { CONTACT } from "./content";
+
+/**
+ * Machine-readable counterpart to the "last updated" strings below. Keep the
+ * two in sync: the visible line is what a reader sees, this is what crawlers
+ * and structured data consume.
+ */
+export const LEGAL_UPDATED_ISO = "2026-09";
+
 export const legal = {
   he: {
     terms: {
@@ -114,6 +123,32 @@ export const legal = {
         },
       ],
     },
+    accessibility: {
+      title: "הצהרת נגישות",
+      updated: "עודכן לאחרונה: ספטמבר 2026",
+      sections: [
+        {
+          h: "1. מחויבות לנגישות",
+          p: "Aegis by Clarvix פועלת להנגיש את האתר לאנשים עם מוגבלויות, מתוך הבנה שנגישות דיגיטלית היא חלק בלתי נפרד משירות הוגן. האתר נבנה מתוך שאיפה לעמוד בהנחיות התקן הישראלי ת\"י 5568, המבוסס על WCAG 2.0 ברמה AA — התקן הנדרש מכוח תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע\"ג-2013.",
+        },
+        {
+          h: "2. התאמות נגישות באתר",
+          p: "האתר כולל: תפריט נגישות צף עם אפשרות להגדלת והקטנת טקסט, מצב ניגודיות גבוהה, מצב גווני אפור, הדגשת קישורים באמצעות קו תחתון, ועצירה של אנימציות מבוססות גלילה או תנועת עכבר. מבנה הכותרות באתר סמנטי, לתמונות משמעותיות יש טקסט חלופי, והאתר תומך בניווט מקלדת ובכתיבה דו-לשונית (עברית מימין לשמאל, אנגלית משמאל לימין) בכל עמוד בנפרד.",
+        },
+        {
+          h: "3. מגבלות ידועות",
+          p: "חרף המאמץ שהושקע, ייתכן שחלקים מסוימים באתר עדיין אינם נגישים באופן מלא. אם נתקלתם בקושי או בחסם נגישות, אנא פנו אלינו בפרטים שלהלן — נטפל בפנייה בהקדם ונציע דרך חלופית לקבלת המידע או השירות המבוקש בזמן שהתיקון מתבצע.",
+        },
+        {
+          h: "4. פרטי יצירת קשר לנושא נגישות",
+          p: `פניות בנושא נגישות ניתן להפנות אל אלברט נוימן, בדוא\"ל ${CONTACT.email} או בוואטסאפ ${CONTACT.whatsappDisplay}. נשתדל להשיב תוך זמן סביר.`,
+        },
+        {
+          h: "5. תאריך ההצהרה",
+          p: "הצהרה זו נכתבה ועודכנה לאחרונה בספטמבר 2026, ותיבדק מחדש מעת לעת ככל שהאתר משתנה.",
+        },
+      ],
+    },
   },
   en: {
     terms: {
@@ -227,6 +262,32 @@ export const legal = {
         {
           h: "6. Limitation of Liability",
           p: "See section 8 of the Terms of Use for the full limitation of liability.",
+        },
+      ],
+    },
+    accessibility: {
+      title: "Accessibility Statement",
+      updated: "Last updated: September 2026",
+      sections: [
+        {
+          h: "1. Our commitment to accessibility",
+          p: "Aegis by Clarvix works to make this website accessible to people with disabilities, as part of providing a fair and professional service. The site was built with the aim of meeting Israeli Standard IS 5568, based on WCAG 2.0 Level AA — the standard required under the Equal Rights for Persons with Disabilities Regulations (Service Accessibility Accommodations), 5773-2013.",
+        },
+        {
+          h: "2. Accessibility features on this site",
+          p: "The site includes: a floating accessibility menu with text size controls, a high-contrast mode, a grayscale mode, an underline-links mode, and a control to stop scroll- and cursor-linked animations. Headings follow a semantic structure, meaningful images have alt text, and the site supports keyboard navigation and a fully bilingual, direction-aware layout (Hebrew right-to-left, English left-to-right) on separate pages.",
+        },
+        {
+          h: "3. Known limitations",
+          p: "Despite this effort, some parts of the site may not yet be fully accessible. If you run into a problem or a barrier, please contact us using the details below — we will address it promptly and offer an alternative way to get the information or service you need in the meantime.",
+        },
+        {
+          h: "4. Accessibility contact",
+          p: `Accessibility inquiries can be directed to Albert Neumann, by email at ${CONTACT.email} or on WhatsApp at ${CONTACT.whatsappDisplay}. We aim to respond within a reasonable time.`,
+        },
+        {
+          h: "5. Date of this statement",
+          p: "This statement was last written and updated in September 2026, and will be reviewed periodically as the site changes.",
         },
       ],
     },

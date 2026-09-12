@@ -12,7 +12,11 @@ export function Footer() {
   const { t, lang } = useLanguage();
 
   return (
-    <footer className="border-t border-border/60 bg-background">
+    // Frosted rather than opaque: the fully-powered circuit stays visible as a
+    // diffuse glow behind the footer without fighting the text for contrast.
+    // backdrop-filter over a moving backdrop is expensive on phone GPUs, so
+    // small screens get a slightly heavier scrim instead of the blur.
+    <footer className="relative border-t border-border/60 bg-background/85 sm:bg-background/75 sm:backdrop-blur-md">
       <div className="mx-auto max-w-6xl px-6 py-14">
         <div className="flex flex-col gap-10 sm:flex-row sm:justify-between">
           <div className="max-w-sm">
@@ -25,17 +29,35 @@ export function Footer() {
               href={whatsappHref(lang)}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-foreground/90 hover:text-primary"
+              className="flex min-h-11 items-center gap-2 text-foreground/90 hover:text-primary"
             >
               <MessageCircle className="h-4 w-4" />
               {CONTACT.whatsappDisplay}
             </a>
             <a
               href={mailtoHref()}
-              className="flex items-center gap-2 text-foreground/90 hover:text-primary"
+              className="flex min-h-11 items-center gap-2 text-foreground/90 hover:text-primary"
             >
               <Mail className="h-4 w-4" />
               {CONTACT.email}
+            </a>
+            <a
+              href={CONTACT.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex min-h-11 items-center gap-2 text-foreground/90 hover:text-primary"
+            >
+              {/* lucide-react has no LinkedIn glyph; inline is lighter than an
+                  extra icon package for one icon. */}
+              <svg
+                className="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z" />
+              </svg>
+              Clarvix
             </a>
           </div>
         </div>
@@ -46,17 +68,35 @@ export function Footer() {
 
         <div className="mt-8 flex flex-col items-center gap-4 border-t border-border/60 pt-6 text-xs text-muted-foreground sm:flex-row sm:justify-between">
           <span>
-            © {new Date().getFullYear()} Aegis by Clarvix — {t.footer.rights}
+            © {new Date().getFullYear()} Aegis by Clarvix — {t.footer.rights} ·{" "}
+            {CONTACT.businessIdLabel[lang]} {CONTACT.businessId}
           </span>
-          <nav className="flex items-center gap-4">
-            <Link href={localePath(lang, "/terms")} className="hover:text-foreground">
+          {/* -my-3 keeps the visual rhythm while the padding gives each link a
+              44px touch target. */}
+          <nav className="-my-3 flex items-center gap-4">
+            <Link
+              href={localePath(lang, "/terms")}
+              className="inline-flex min-h-11 items-center hover:text-foreground"
+            >
               {t.footer.links.terms}
             </Link>
-            <Link href={localePath(lang, "/privacy")} className="hover:text-foreground">
+            <Link
+              href={localePath(lang, "/privacy")}
+              className="inline-flex min-h-11 items-center hover:text-foreground"
+            >
               {t.footer.links.privacy}
             </Link>
-            <Link href={localePath(lang, "/disclaimer")} className="hover:text-foreground">
+            <Link
+              href={localePath(lang, "/disclaimer")}
+              className="inline-flex min-h-11 items-center hover:text-foreground"
+            >
               {t.footer.links.disclaimer}
+            </Link>
+            <Link
+              href={localePath(lang, "/accessibility")}
+              className="inline-flex min-h-11 items-center hover:text-foreground"
+            >
+              {t.footer.links.accessibility}
             </Link>
           </nav>
         </div>

@@ -9,8 +9,15 @@ export function TrustSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="trust" className="mx-auto max-w-6xl px-6 py-24">
-      <div className="mx-auto max-w-2xl text-center">
+    <section id="trust" className="relative mx-auto max-w-6xl px-6 py-24">
+      {/* By this scroll depth the backdrop circuit is bright enough to
+          compete with the three-column copy below; pool darkness under it
+          the same way the coverage and CTA sections do. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_82%_68%_at_50%_45%,rgba(0,0,0,0.88),rgba(0,0,0,0.55)_60%,transparent_90%)]"
+      />
+      <div className="relative mx-auto max-w-2xl text-center">
         <span className="text-sm font-medium tracking-wide text-primary">
           {t.trust.eyebrow}
         </span>
@@ -19,7 +26,7 @@ export function TrustSection() {
         </h2>
       </div>
 
-      <div className="mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-3">
+      <div className="relative mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-3">
         {t.trust.items.map((item, i) => {
           const Icon = icons[i];
           return (

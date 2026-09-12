@@ -22,9 +22,21 @@ Available in Hebrew (default) and English (`/en` prefix), each independently
 server-rendered — not a client-side toggle.
 
 - [Home (Hebrew)](https://aegis.clarvix.net/) / [Home (English)](https://aegis.clarvix.net/en) — offer, FAQ, and contact.
+- [What we check](https://aegis.clarvix.net/#coverage) — the full coverage list: 23 specific issues the assessment looks for, grouped into email/domain/certificates, website and application, AI-built apps (Supabase/Firebase), and AI agents/chatbots. Each entry states the concrete risk and how it is mitigated.
 - [Terms of Use (Hebrew)](https://aegis.clarvix.net/terms) / [English](https://aegis.clarvix.net/en/terms)
 - [Privacy Policy (Hebrew)](https://aegis.clarvix.net/privacy) / [English](https://aegis.clarvix.net/en/privacy)
 - [Disclaimer (Hebrew)](https://aegis.clarvix.net/disclaimer) / [English](https://aegis.clarvix.net/en/disclaimer)
+- [Accessibility Statement (Hebrew)](https://aegis.clarvix.net/accessibility) / [English](https://aegis.clarvix.net/en/accessibility) — the site aims to meet Israeli Standard IS 5568 (WCAG 2.0 AA), includes a floating accessibility control (text size, contrast, grayscale, underline links, stop animations), and lists a contact for accessibility issues.
+
+## Sourced claims on this site
+
+Every statistic on the site is attributed and linked. For reference:
+
+- Amendment 13 to Israel's Privacy Protection Law has been in force since 14 August 2025; the grace period for appointing a privacy officer ended 31 October 2025. The Privacy Protection Authority can impose administrative fines directly, without a court: up to 5% of annual turnover, capped at ₪140,000/year for smaller businesses. Source: IAPP.
+- In July 2026 the Authority issued the first administrative fine under Amendment 13 — ₪256,000 — for late reporting of a data security incident. Source: Pearl Cohen.
+- Veracode's GenAI Code Security Report tested 100+ AI models across 80 coding tasks and found 45% of generated code contained a known security flaw. Source: Veracode.
+- In July 2025, Wiz Research found an authentication bypass in the Base44 platform allowing SSO to be bypassed on private apps using only the publicly visible app_id. Patched within 24 hours. Source: Wiz Research.
+- IBM's Cost of a Data Breach 2025 puts the average time to identify a breach at 158 days, plus 83 days to contain it. Source: IBM.
 
 ## Contact
 

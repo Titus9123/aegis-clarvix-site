@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
+import { useEffectiveReducedMotion } from "@/components/accessibility-provider";
 
 export function Reveal({
   children,
@@ -11,7 +12,7 @@ export function Reveal({
   delay?: number;
   y?: number;
 }) {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useEffectiveReducedMotion();
   const offsetY = reduceMotion ? 0 : y;
 
   return (

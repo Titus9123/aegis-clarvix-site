@@ -21,11 +21,28 @@ export const content = {
     },
     regulatory: {
       title: "תיקון 13 לחוק הגנת הפרטיות כבר בתוקף",
-      body: "תקופת החסד למינוי ממונה הגנת פרטיות הסתיימה באוקטובר 2025. רשות הגנת הפרטיות יכולה כעת להטיל קנסות של עד 5% מהמחזור השנתי.",
+      body: "התיקון בתוקף מאז 14 באוגוסט 2025, ותקופת החסד למינוי ממונה הגנת פרטיות הסתיימה ב-31 באוקטובר 2025. רשות הגנת הפרטיות מוסמכת כעת להטיל עיצומים כספיים בעצמה, בלי בית משפט: עד 5% מהמחזור השנתי, ולעסקים קטנים עד ₪140,000 בשנה. ביולי 2026 הוטל העיצום הראשון מכוח התיקון, ₪256,000, על דיווח באיחור על אירוע אבטחה.",
+      sources: [
+        {
+          label: "IAPP — סקירת תיקון 13",
+          url: "https://iapp.org/news/a/israel-marks-a-new-era-in-privacy-law-amendment-13-ushers-in-sweeping-reform",
+        },
+        {
+          label: "Pearl Cohen — העיצום הראשון",
+          url: "https://www.pearlcohen.com/israel-issues-first-of-its-kind-administrative-fine-for-failure-to-report-a-data-security-incident/",
+        },
+      ],
     },
     services: {
       eyebrow: "השירות שלנו",
       title: "בדיקת אבטחה לעסק שלך",
+      note: "לפי דוח IBM לשנת 2025, לוקח לארגונים 158 ימים בממוצע רק כדי לזהות שדלף מידע, ועוד 83 ימים עד להכלת האירוע. הבדיקה הזו נועדה לכך שתדעו ראשונים.",
+      noteSources: [
+        {
+          label: "IBM — Cost of a Data Breach 2025",
+          url: "https://www.ibm.com/think/x-force/2025-cost-of-a-data-breach-navigating-ai",
+        },
+      ],
       item: {
         title: "בדיקת חשיפה חיצונית",
         desc: "מגלים אילו דומיינים, שירותים ומידע של העסק שלכם חשופים באינטרנט, ומה לתקן קודם.",
@@ -46,8 +63,18 @@ export const content = {
     builders: {
       eyebrow: "לבעלי סטארטאפ בודדים",
       title: "בניתם משהו עם Lovable, Base44 או Replit?",
-      body: "98% מהאפליקציות שנבנו עם כלי AI מכילות לפחות פרצת אבטחה אחת — הרוב בגלל מפתחות API חשופות או הרשאות Supabase שגויות. אותה בדיקת אבטחה שלנו מכסה גם את זה.",
+      body: "Veracode בדקה יותר מ-100 מודלי AI על פני 80 משימות תכנות: ב-45% מהמקרים הקוד שנוצר הכיל פרצת אבטחה מוכרת. ביולי 2025 חוקרי Wiz מצאו ב-Base44 עצמה ליקוי שאיפשר לעקוף SSO ולהיכנס לאפליקציות פרטיות, עם ה-app_id שגלוי בכתובת האתר בלבד. אותה בדיקת אבטחה שלנו מכסה בדיוק את הדברים האלה.",
       cta: "בדקו את האפליקציה שלי",
+      sources: [
+        {
+          label: "Veracode — GenAI Code Security Report",
+          url: "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/",
+        },
+        {
+          label: "Wiz Research — Base44",
+          url: "https://www.wiz.io/blog/critical-vulnerability-base44",
+        },
+      ],
     },
     trust: {
       eyebrow: "למה לבחור בנו",
@@ -55,11 +82,11 @@ export const content = {
       items: [
         {
           title: "בקרת איכות אנושית",
-          desc: "כל ממצא עובר בדיקה אנושית לפני שהוא מגיע אליכם — לא מעתיקים פלט גולמי של כלי סריקה.",
+          desc: "כל ממצא נסקר אישית על ידי אלברט נוימן, מייסד Clarvix ובעל תעודת Offensive Security Expert ממכללת איקום (360 שעות לימוד, 2025) — לא מעתיקים פלט גולמי של כלי סריקה.",
         },
         {
           title: "בדיקה חוזרת כלולה",
-          desc: "אחרי שתתקנו, אנחנו בודקים שוב ומוודאים שהתיקון אכן עבד.",
+          desc: "אחרי התיקונים, אנחנו בודקים שוב ומוודאים שהתיקון אכן עבד.",
         },
         {
           title: "בלי הבטחות מוגזמות",
@@ -125,7 +152,22 @@ export const content = {
         terms: "תנאי שימוש",
         privacy: "מדיניות פרטיות",
         disclaimer: "כתב ויתור",
+        accessibility: "הצהרת נגישות",
       },
+    },
+    a11y: {
+      openLabel: "אפשרויות נגישות",
+      closeLabel: "סגירת תפריט הנגישות",
+      title: "נגישות",
+      fontSize: "גודל טקסט",
+      increase: "הגדלת טקסט",
+      decrease: "הקטנת טקסט",
+      contrast: "ניגודיות גבוהה",
+      grayscale: "גווני אפור",
+      underlineLinks: "הדגשת קישורים",
+      reduceMotion: "עצירת אנימציות",
+      reset: "איפוס הגדרות",
+      statementLink: "הצהרת נגישות מלאה",
     },
   },
   en: {
@@ -149,11 +191,28 @@ export const content = {
     },
     regulatory: {
       title: "Amendment 13 to Israel's Privacy Law is already in effect",
-      body: "The grace period to appoint a privacy officer ended in October 2025. The Privacy Protection Authority can now fine up to 5% of annual revenue.",
+      body: "The amendment has been in force since 14 August 2025, and the grace period to appoint a privacy officer ended on 31 October 2025. The Privacy Protection Authority can now impose fines itself, without going to court: up to 5% of annual turnover, capped at ₪140,000 a year for smaller businesses. In July 2026 it issued the first fine under the amendment, ₪256,000, for reporting a security incident late.",
+      sources: [
+        {
+          label: "IAPP — Amendment 13 overview",
+          url: "https://iapp.org/news/a/israel-marks-a-new-era-in-privacy-law-amendment-13-ushers-in-sweeping-reform",
+        },
+        {
+          label: "Pearl Cohen — first administrative fine",
+          url: "https://www.pearlcohen.com/israel-issues-first-of-its-kind-administrative-fine-for-failure-to-report-a-data-security-incident/",
+        },
+      ],
     },
     services: {
       eyebrow: "What we offer",
       title: "A security check for your business",
+      note: "IBM's 2025 report puts the average time just to identify a data breach at 158 days, plus another 83 days to contain it. The point of this check is that you find out first.",
+      noteSources: [
+        {
+          label: "IBM — Cost of a Data Breach 2025",
+          url: "https://www.ibm.com/think/x-force/2025-cost-of-a-data-breach-navigating-ai",
+        },
+      ],
       item: {
         title: "External Exposure Check",
         desc: "We find out which domains, services, and information about your business are exposed online, and what to fix first.",
@@ -174,8 +233,18 @@ export const content = {
     builders: {
       eyebrow: "For solo founders",
       title: "Built something with Lovable, Base44, or Replit?",
-      body: "98% of apps built with AI tools ship with at least one security flaw — most from exposed API keys or misconfigured Supabase permissions. The same security check we run for any business covers this too.",
+      body: "Veracode tested more than 100 AI models across 80 coding tasks: in 45% of cases the generated code shipped with a known security flaw. And in July 2025, Wiz researchers found a flaw in Base44 itself that let anyone bypass SSO and reach private apps using only the app_id visible in the URL. The same security check we run for any business covers exactly this.",
       cta: "Check my app",
+      sources: [
+        {
+          label: "Veracode — GenAI Code Security Report",
+          url: "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/",
+        },
+        {
+          label: "Wiz Research — Base44",
+          url: "https://www.wiz.io/blog/critical-vulnerability-base44",
+        },
+      ],
     },
     trust: {
       eyebrow: "Why us",
@@ -183,7 +252,7 @@ export const content = {
       items: [
         {
           title: "Human quality control",
-          desc: "Every finding is reviewed by a person before it reaches you — never raw scanner output.",
+          desc: "Every finding is personally reviewed by Albert Neumann, Clarvix's founder and holder of an Offensive Security Expert certificate from Ecom School (360 academic hours, 2025) — never raw scanner output.",
         },
         {
           title: "Retest included",
@@ -253,7 +322,22 @@ export const content = {
         terms: "Terms of Use",
         privacy: "Privacy Policy",
         disclaimer: "Disclaimer",
+        accessibility: "Accessibility Statement",
       },
+    },
+    a11y: {
+      openLabel: "Accessibility options",
+      closeLabel: "Close accessibility menu",
+      title: "Accessibility",
+      fontSize: "Text size",
+      increase: "Increase text size",
+      decrease: "Decrease text size",
+      contrast: "High contrast",
+      grayscale: "Grayscale",
+      underlineLinks: "Underline links",
+      reduceMotion: "Stop animations",
+      reset: "Reset settings",
+      statementLink: "Full accessibility statement",
     },
   },
 } as const;
@@ -262,4 +346,7 @@ export const CONTACT = {
   whatsapp: "972534377718",
   whatsappDisplay: "053-437-7718",
   email: "contact@clarvix.net",
+  businessId: "321411589",
+  businessIdLabel: { he: "עוסק פטור", en: "Registered business (Osek Patur)" },
+  linkedin: "https://www.linkedin.com/company/115794167",
 };

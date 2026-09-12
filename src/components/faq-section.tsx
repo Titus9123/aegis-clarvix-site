@@ -25,15 +25,21 @@ export function FaqSection() {
   };
 
   return (
-    <section id="faq" className="mx-auto max-w-3xl px-6 py-24">
+    <section id="faq" className="relative mx-auto max-w-3xl px-6 py-24">
       {/* FAQPage structured data — mirrors the visible accordion below,
           keyed to the active language so it never drifts from what's on screen. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {/* By this scroll depth the backdrop is well into its ignition ramp —
+          same pooled-darkness treatment as trust/services/coverage/CTA. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_95%_95%_at_50%_45%,rgba(0,0,0,0.9),rgba(0,0,0,0.6)_55%,transparent_92%)]"
+      />
 
-      <div className="text-center">
+      <div className="relative text-center">
         <span className="text-sm font-medium tracking-wide text-primary">
           {t.faq.eyebrow}
         </span>
@@ -42,7 +48,7 @@ export function FaqSection() {
         </h2>
       </div>
 
-      <Accordion className="mt-10">
+      <Accordion className="relative mt-10" hiddenUntilFound>
         {t.faq.items.map((item, i) => (
           <AccordionItem key={item.q} value={`item-${i}`} className="border-border/60">
             <AccordionTrigger className="text-start font-heading text-base font-semibold text-foreground hover:no-underline">

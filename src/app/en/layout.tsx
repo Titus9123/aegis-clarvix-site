@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Heebo, Rubik } from "next/font/google";
 import { LanguageProvider } from "@/components/language-provider";
-import { organizationJsonLd, localeAlternates, SITE_URL } from "@/lib/seo";
+import { AccessibilityProvider } from "@/components/accessibility-provider";
+import { AccessibilityWidget } from "@/components/accessibility-widget";
+import { siteJsonLd, localeAlternates, SITE_URL } from "@/lib/seo";
 import "../globals.css";
 
 const heebo = Heebo({
@@ -41,6 +43,20 @@ export const metadata: Metadata = {
     siteName: "Aegis by Clarvix",
     locale: "en_US",
     alternateLocale: "he_IL",
+    images: [
+      {
+        url: "/brand/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Aegis by Clarvix",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aegis by Clarvix",
+    description: "Find out what's exposed about your business online — before someone else does.",
+    images: ["/brand/og-image.png"],
   },
   robots: {
     index: true,
@@ -53,7 +69,7 @@ export default function EnglishRootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const jsonLd = organizationJsonLd("en");
+  const jsonLd = siteJsonLd("en");
 
   return (
     <html
@@ -67,7 +83,12 @@ export default function EnglishRootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <LanguageProvider lang="en">{children}</LanguageProvider>
+        <LanguageProvider lang="en">
+          <AccessibilityProvider>
+            {children}
+            <AccessibilityWidget />
+          </AccessibilityProvider>
+        </LanguageProvider>
       </body>
     </html>
   );
