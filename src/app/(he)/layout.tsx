@@ -3,6 +3,7 @@ import { Heebo, Rubik } from "next/font/google";
 import { LanguageProvider } from "@/components/language-provider";
 import { AccessibilityProvider } from "@/components/accessibility-provider";
 import { AccessibilityWidget } from "@/components/accessibility-widget";
+import { GaMetaScripts } from "@/components/ga-meta-scripts";
 import { siteJsonLd, localeAlternates, SITE_URL } from "@/lib/seo";
 import "../globals.css";
 
@@ -77,6 +78,7 @@ export default function HebrewRootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <GaMetaScripts />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

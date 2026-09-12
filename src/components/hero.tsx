@@ -10,6 +10,7 @@ import { CircuitBackdrop } from "@/components/circuit-backdrop";
 import { DecryptText } from "@/components/decrypt-text";
 import { Magnetic } from "@/components/magnetic";
 import { whatsappHref, mailtoHref } from "@/lib/whatsapp";
+import { trackWhatsAppClick, trackEmailClick } from "@/lib/analytics";
 
 export function Hero() {
   const { t, lang } = useLanguage();
@@ -56,7 +57,14 @@ export function Hero() {
               size="lg"
               className="h-11 gap-2 bg-primary px-5 text-primary-foreground shadow-[0_0_24px_rgba(0,240,217,0.35)] transition-transform duration-200 hover:scale-[1.03] hover:bg-primary/90 active:scale-[0.97] sm:h-9 sm:px-2.5"
               nativeButton={false}
-              render={<a href={whatsappHref(lang)} target="_blank" rel="noopener noreferrer" />}
+              render={
+                <a
+                  href={whatsappHref(lang)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={trackWhatsAppClick}
+                />
+              }
             >
               <MessageCircle className="h-4 w-4" />
               {t.hero.ctaPrimary}
@@ -68,7 +76,7 @@ export function Hero() {
               size="lg"
               className="h-11 gap-2 border-border/60 px-5 sm:h-9 sm:px-2.5"
               nativeButton={false}
-              render={<a href={mailtoHref()} />}
+              render={<a href={mailtoHref()} onClick={trackEmailClick} />}
             >
               <Mail className="h-4 w-4" />
               {t.hero.ctaSecondary}

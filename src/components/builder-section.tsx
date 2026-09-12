@@ -5,6 +5,7 @@ import { useLanguage } from "@/components/language-provider";
 import { Button } from "@/components/ui/button";
 import { SourceNote } from "@/components/source-note";
 import { whatsappHref } from "@/lib/whatsapp";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export function BuilderSection() {
   const { t, lang } = useLanguage();
@@ -34,7 +35,14 @@ export function BuilderSection() {
             <Button
               className="h-11 gap-2 bg-primary px-5 text-primary-foreground transition-transform duration-200 hover:scale-[1.03] hover:bg-primary/90 active:scale-[0.97] sm:h-8 sm:px-2.5"
               nativeButton={false}
-              render={<a href={whatsappHref(lang)} target="_blank" rel="noopener noreferrer" />}
+              render={
+                <a
+                  href={whatsappHref(lang)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={trackWhatsAppClick}
+                />
+              }
             >
               <MessageCircle className="h-4 w-4" />
               {t.builders.cta}

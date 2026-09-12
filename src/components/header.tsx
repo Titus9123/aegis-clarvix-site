@@ -15,6 +15,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { whatsappHref } from "@/lib/whatsapp";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import { localePath } from "@/lib/seo";
 
 export function Header() {
@@ -56,7 +57,14 @@ export function Header() {
             <Button
               className="bg-primary text-primary-foreground hover:bg-primary/90"
               nativeButton={false}
-              render={<a href={whatsappHref(lang)} target="_blank" rel="noopener noreferrer" />}
+              render={
+                <a
+                  href={whatsappHref(lang)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={trackWhatsAppClick}
+                />
+              }
             >
               {t.nav.contact}
             </Button>
@@ -99,7 +107,12 @@ export function Header() {
                   className="mt-4 h-11 bg-primary text-primary-foreground hover:bg-primary/90"
                   nativeButton={false}
                   render={
-                    <a href={whatsappHref(lang)} target="_blank" rel="noopener noreferrer" />
+                    <a
+                      href={whatsappHref(lang)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={trackWhatsAppClick}
+                    />
                   }
                 >
                   {t.nav.contact}

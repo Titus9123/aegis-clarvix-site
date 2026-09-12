@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { about } from "@/lib/about-content";
 import { personJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import { whatsappHref } from "@/lib/whatsapp";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export function AboutPage() {
   const { lang } = useLanguage();
@@ -56,7 +57,12 @@ export function AboutPage() {
             className="mt-6 bg-primary text-primary-foreground hover:bg-primary/90"
             nativeButton={false}
             render={
-              <a href={whatsappHref(lang)} target="_blank" rel="noopener noreferrer" />
+              <a
+                href={whatsappHref(lang)}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={trackWhatsAppClick}
+              />
             }
           >
             {lang === "he" ? "לתיאום שיחה בוואטסאפ" : "Chat on WhatsApp"}

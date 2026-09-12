@@ -5,6 +5,7 @@ import { useLanguage } from "@/components/language-provider";
 import { Button } from "@/components/ui/button";
 import { Magnetic } from "@/components/magnetic";
 import { whatsappHref } from "@/lib/whatsapp";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export function CtaSection() {
   const { t, lang } = useLanguage();
@@ -26,7 +27,14 @@ export function CtaSection() {
             size="lg"
             className="h-11 gap-2 bg-primary px-5 text-primary-foreground shadow-[0_0_24px_rgba(0,240,217,0.35)] transition-transform duration-200 hover:scale-[1.03] hover:bg-primary/90 active:scale-[0.97] sm:h-9 sm:px-2.5"
             nativeButton={false}
-            render={<a href={whatsappHref(lang)} target="_blank" rel="noopener noreferrer" />}
+            render={
+              <a
+                href={whatsappHref(lang)}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={trackWhatsAppClick}
+              />
+            }
           >
             <MessageCircle className="h-4 w-4" />
             {t.cta.ctaPrimary}

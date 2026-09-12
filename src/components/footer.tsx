@@ -6,6 +6,7 @@ import { useLanguage } from "@/components/language-provider";
 import { Logo } from "@/components/logo";
 import { CONTACT } from "@/lib/content";
 import { whatsappHref, mailtoHref } from "@/lib/whatsapp";
+import { trackWhatsAppClick, trackEmailClick } from "@/lib/analytics";
 import { localePath } from "@/lib/seo";
 
 export function Footer() {
@@ -29,6 +30,7 @@ export function Footer() {
               href={whatsappHref(lang)}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackWhatsAppClick}
               className="flex min-h-11 items-center gap-2 text-foreground/90 hover:text-primary"
             >
               <MessageCircle className="h-4 w-4" />
@@ -36,6 +38,7 @@ export function Footer() {
             </a>
             <a
               href={mailtoHref()}
+              onClick={trackEmailClick}
               className="flex min-h-11 items-center gap-2 text-foreground/90 hover:text-primary"
             >
               <Mail className="h-4 w-4" />
