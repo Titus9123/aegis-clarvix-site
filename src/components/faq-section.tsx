@@ -7,14 +7,26 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { securityTopics } from "@/lib/security-topics-content";
 
 export function FaqSection() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+
+  // Un único bloque FAQPage para toda la página: las 6 preguntas frecuentes
+  // más los 22 temas del glosario, que ahora son también pares pregunta/
+  // respuesta con el texto visible en el HTML (requisito de Google para que
+  // el marcado sea elegible).
+  const glossaryQa = securityTopics[lang].categories.flatMap((category) =>
+    category.items.map((item) => ({
+      q: item.title,
+      a: `${item.problem} ${item.mitigation}`,
+    }))
+  );
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: t.faq.items.map((item) => ({
+    mainEntity: [...t.faq.items, ...glossaryQa].map((item) => ({
       "@type": "Question",
       name: item.q,
       acceptedAnswer: {
@@ -48,7 +60,7 @@ export function FaqSection() {
         </h2>
       </div>
 
-      <Accordion className="relative mt-10" hiddenUntilFound>
+      <Accordion className="relative mt-10">
         {t.faq.items.map((item, i) => (
           <AccordionItem key={item.q} value={`item-${i}`} className="border-border/60">
             <AccordionTrigger className="text-start font-heading text-base font-semibold text-foreground hover:no-underline">

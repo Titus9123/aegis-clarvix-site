@@ -20,6 +20,24 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://aegis.clarvix.net/about</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/about" />
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aegis.clarvix.net/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aegis.clarvix.net/about" />
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://aegis.clarvix.net/terms</loc>
     <xhtml:link rel="alternate" hreflang="he" href="https://aegis.clarvix.net/terms" />
     <xhtml:link rel="alternate" hreflang="en" href="https://aegis.clarvix.net/en/terms" />

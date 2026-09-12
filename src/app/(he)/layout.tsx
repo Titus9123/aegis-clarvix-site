@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Aegis by Clarvix — אבטחת סייבר לעסקים קטנים ובינוניים",
   description:
-    "מגלים מה חשוף מהעסק שלכם באינטרנט, מסבירים בעברית פשוטה, ומוודאים שהתיקון עבד. בדיקות אבטחה לעסקים קטנים ולסטארטאפים בודדים בישראל, כולל בדיקת עמידה בתיקון 13 לחוק הגנת הפרטיות.",
+    "מגלים מה חשוף מהעסק שלכם באינטרנט, מסבירים בעברית פשוטה, ומוודאים שהתיקון עבד. בדיקת אבטחה לעסקים קטנים בישראל — מחיר קבוע ₪1,990, כולל בדיקה חוזרת.",
   keywords: [
     "אבטחת מידע לעסקים קטנים",
     "בדיקת חשיפה חיצונית",
@@ -44,20 +44,17 @@ export const metadata: Metadata = {
     siteName: "Aegis by Clarvix",
     locale: "he_IL",
     alternateLocale: "en_US",
-    images: [
-      {
-        url: "/brand/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Aegis by Clarvix",
-      },
-    ],
+    // Static PNG in public/, not the opengraph-image.tsx route convention:
+    // GitHub Pages infers content-type from the file extension, and an
+    // extensionless file is served as application/octet-stream, which the
+    // WhatsApp and LinkedIn crawlers discard.
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Aegis by Clarvix" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aegis by Clarvix",
     description: "גלו מה מהעסק שלכם חשוף באינטרנט — לפני שמישהו אחר יגלה.",
-    images: ["/brand/og-image.png"],
+    images: ["/og.png"],
   },
   robots: {
     index: true,

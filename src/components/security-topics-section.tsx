@@ -1,12 +1,6 @@
 "use client";
 
 import { useLanguage } from "@/components/language-provider";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { securityTopics } from "@/lib/security-topics-content";
 
 export function SecurityTopicsSection() {
@@ -17,40 +11,13 @@ export function SecurityTopicsSection() {
       ? { problem: "הבעיה:", mitigation: "איך מתקנים:" }
       : { problem: "The problem:", mitigation: "How it's mitigated:" };
 
-  // Every checked topic as a Question/Answer pair. This list is the most
-  // fact-dense, most citable content on the site; without markup an answer
-  // engine has no structured way to pull "what does Aegis check for X".
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: content.title,
-    itemListElement: content.categories.flatMap((category) =>
-      category.items.map((item) => ({
-        "@type": "ListItem",
-        item: {
-          "@type": "Question",
-          name: item.title,
-          answerCount: 1,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: `${labels.problem} ${item.problem} ${labels.mitigation} ${item.mitigation}`,
-          },
-        },
-      })),
-    ).map((entry, i) => ({ ...entry, position: i + 1 })),
-  };
-
   return (
-    <section id="coverage" className="relative mx-auto max-w-4xl px-6 py-24">
+    <section id="coverage" className="relative mx-auto max-w-5xl px-6 py-24">
       {/* The densest block of copy on the page needs its own ground, or the
           backdrop competes with it once the circuit starts carrying current. */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_78%_62%_at_50%_50%,rgba(0,0,0,0.88),rgba(0,0,0,0.55)_62%,transparent_92%)]"
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="relative text-center">
         <span className="text-sm font-medium tracking-wide text-primary">
@@ -64,39 +31,32 @@ export function SecurityTopicsSection() {
         </p>
       </div>
 
-      <div className="relative mt-12 space-y-10">
-        {content.categories.map((category, ci) => (
+      {/* Always visible, never collapsed: this is reference material meant
+          for reading and for indexing — nothing depends on a click, and it
+          sidesteps any browser's support quirks with hidden="until-found". */}
+      <div className="relative mt-14 space-y-12">
+        {content.categories.map((category) => (
           <div key={category.name}>
-            <h3 className="font-heading text-lg font-semibold text-foreground">
+            <h3 className="border-b border-border/60 pb-3 font-heading text-lg font-semibold text-primary">
               {category.name}
             </h3>
-            {/* hiddenUntilFound keeps every answer in the served HTML (via
-                hidden="until-found") instead of mounting it on click. Without
-                it none of this copy reaches a crawler or an AI engine, which
-                is most of the substance on the page. */}
-            <Accordion className="mt-4" hiddenUntilFound>
-              {category.items.map((item, ii) => (
-                <AccordionItem
-                  key={item.title}
-                  value={`cat${ci}-item${ii}`}
-                  className="border-border/60"
-                >
-                  <AccordionTrigger className="text-start font-heading text-base font-semibold text-foreground hover:no-underline">
+            <div className="mt-6 grid gap-x-8 gap-y-8 md:grid-cols-2">
+              {category.items.map((item) => (
+                <article key={item.title}>
+                  <h4 className="font-heading text-base font-semibold text-foreground">
                     {item.title}
-                  </AccordionTrigger>
-                  <AccordionContent className="space-y-3 leading-relaxed text-muted-foreground">
-                    <p>
-                      <span className="font-medium text-foreground">{labels.problem}</span>{" "}
-                      {item.problem}
-                    </p>
-                    <p>
-                      <span className="font-medium text-foreground">{labels.mitigation}</span>{" "}
-                      {item.mitigation}
-                    </p>
-                  </AccordionContent>
-                </AccordionItem>
+                  </h4>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    <span className="font-medium text-foreground/90">{labels.problem}</span>{" "}
+                    {item.problem}
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    <span className="font-medium text-foreground/90">{labels.mitigation}</span>{" "}
+                    {item.mitigation}
+                  </p>
+                </article>
               ))}
-            </Accordion>
+            </div>
           </div>
         ))}
       </div>

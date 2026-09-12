@@ -75,6 +75,12 @@ export function Footer() {
               44px touch target. */}
           <nav className="-my-3 flex items-center gap-4">
             <Link
+              href={localePath(lang, "/about")}
+              className="inline-flex min-h-11 items-center hover:text-foreground"
+            >
+              {t.nav.about}
+            </Link>
+            <Link
               href={localePath(lang, "/terms")}
               className="inline-flex min-h-11 items-center hover:text-foreground"
             >

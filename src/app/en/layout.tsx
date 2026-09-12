@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Aegis by Clarvix — Cybersecurity for Small and Mid-Size Businesses",
   description:
-    "We find what's exposed about your business online, explain it in plain language, and verify the fix. Security assessments for Israeli SMBs and solo founders, including an Amendment 13 privacy-law readiness check.",
+    "We find what's exposed about your business online, explain it in plain language, and verify the fix. Fixed price ₪1,990 for Israeli SMBs and solo founders.",
   keywords: [
     "cybersecurity for small business Israel",
     "external exposure assessment",
@@ -43,20 +43,17 @@ export const metadata: Metadata = {
     siteName: "Aegis by Clarvix",
     locale: "en_US",
     alternateLocale: "he_IL",
-    images: [
-      {
-        url: "/brand/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Aegis by Clarvix",
-      },
-    ],
+    // Static PNG in public/ rather than the opengraph-image.tsx convention:
+    // GitHub Pages infers content-type from the file extension, and an
+    // extensionless file is served as application/octet-stream, which the
+    // WhatsApp and LinkedIn crawlers discard.
+    images: [{ url: "/og-en.png", width: 1200, height: 630, alt: "Aegis by Clarvix" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aegis by Clarvix",
     description: "Find out what's exposed about your business online — before someone else does.",
-    images: ["/brand/og-image.png"],
+    images: ["/og-en.png"],
   },
   robots: {
     index: true,

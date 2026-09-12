@@ -4,7 +4,7 @@ import { useLanguage } from "@/components/language-provider";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { legal, LEGAL_UPDATED_ISO } from "@/lib/legal-content";
-import { SITE_URL, localePath } from "@/lib/seo";
+import { SITE_URL, localePath, breadcrumbJsonLd } from "@/lib/seo";
 
 export function LegalPage({
   doc,
@@ -32,6 +32,12 @@ export function LegalPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd(lang, `/${doc}`, content.title)),
+        }}
       />
       <Header />
       <main className="mx-auto max-w-3xl px-6 py-20">

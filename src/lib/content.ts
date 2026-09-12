@@ -9,6 +9,7 @@ export const content = {
       coverage: "מה אנחנו בודקים",
       trust: "למה לבחור בנו",
       faq: "שאלות נפוצות",
+      about: "מי אנחנו",
       contact: "יצירת קשר",
     },
     hero: {
@@ -31,6 +32,27 @@ export const content = {
           label: "Pearl Cohen — העיצום הראשון",
           url: "https://www.pearlcohen.com/israel-issues-first-of-its-kind-administrative-fine-for-failure-to-report-a-data-security-incident/",
         },
+      ],
+    },
+    definition: {
+      question: "מה זה בדיקת חשיפה חיצונית?",
+      answer:
+        "בדיקת חשיפה חיצונית היא סקירה של כל מה שהעסק שלכם חושף לאינטרנט הפתוח — דומיינים ותת-דומיינים, הגדרות מייל, תעודות אבטחה, אתר ציבורי ומפתחות שדלפו — שמבוצעת מבחוץ, בלי סיסמאות ובלי גישה למערכות שלכם, ומסתיימת ברשימה מתועדפת של מה לתקן קודם.",
+    },
+    comparison: {
+      eyebrow: "השוואה",
+      title: "איפה זה יושב מול האפשרויות האחרות",
+      note: "טווחי המחירים של פנטסט מלא בישראל ושל סורקים אוטומטיים לקוחים ממחקר שוק פומבי.",
+      sourceLabel: "מקור למחירי פנטסט בישראל: Astra",
+      sourceUrl: "https://www.getastra.com/pentest-services/israel",
+      columns: ["", "Aegis", "פנטסט מלא", "סורק אוטומטי"],
+      rows: [
+        ["מחיר", "₪1,990 קבוע", "₪15,000–150,000", "9–29$ לחודש"],
+        ["בקרה אנושית על כל ממצא", "כן", "כן", "לא"],
+        ["הסבר בשפה של בעל העסק", "כן", "בדרך כלל לא", "לא"],
+        ["בדיקה חוזרת כלולה", "כן", "לפעמים", "לא"],
+        ["ניסיון פריצה פעיל", "לא", "כן", "לא"],
+        ["זמן עד לתוצאות", "2–5 ימי עסקים", "שבועות", "מיידי"],
       ],
     },
     services: {
@@ -63,12 +85,12 @@ export const content = {
     builders: {
       eyebrow: "לבעלי סטארטאפ בודדים",
       title: "בניתם משהו עם Lovable, Base44 או Replit?",
-      body: "Veracode בדקה יותר מ-100 מודלי AI על פני 80 משימות תכנות: ב-45% מהמקרים הקוד שנוצר הכיל פרצת אבטחה מוכרת. ביולי 2025 חוקרי Wiz מצאו ב-Base44 עצמה ליקוי שאיפשר לעקוף SSO ולהיכנס לאפליקציות פרטיות, עם ה-app_id שגלוי בכתובת האתר בלבד. אותה בדיקת אבטחה שלנו מכסה בדיוק את הדברים האלה.",
+      body: "סריקה של Symbiotic Security על 1,072 אפליקציות שנבנו בשיטת vibe coding מצאה שב-98% מהן יש לפחות פרצת אבטחה אחת. ביולי 2025 חוקרי Wiz מצאו ב-Base44 עצמה ליקוי שאיפשר לעקוף SSO ולהיכנס לאפליקציות פרטיות, עם ה-app_id שגלוי בכתובת האתר בלבד. אותה בדיקת אבטחה שלנו מכסה בדיוק את הדברים האלה.",
       cta: "בדקו את האפליקציה שלי",
       sources: [
         {
-          label: "Veracode — GenAI Code Security Report",
-          url: "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/",
+          label: "Symbiotic Security — סריקת 1,072 אפליקציות",
+          url: "https://www.symbioticsec.ai/blog/we-scanned-1-072-vibe-coded-apps-98-had-security-flaws",
         },
         {
           label: "Wiz Research — Base44",
@@ -178,6 +200,7 @@ export const content = {
       coverage: "What We Check",
       trust: "Why Us",
       faq: "FAQ",
+      about: "About",
       contact: "Contact",
     },
     hero: {
@@ -201,6 +224,27 @@ export const content = {
           label: "Pearl Cohen — first administrative fine",
           url: "https://www.pearlcohen.com/israel-issues-first-of-its-kind-administrative-fine-for-failure-to-report-a-data-security-incident/",
         },
+      ],
+    },
+    definition: {
+      question: "What is an external exposure assessment?",
+      answer:
+        "An external exposure assessment is a review of everything your business exposes to the open internet — domains and subdomains, email configuration, security certificates, your public site, and leaked keys — performed from the outside, with no passwords and no access to your systems, ending in a prioritised list of what to fix first.",
+    },
+    comparison: {
+      eyebrow: "Comparison",
+      title: "Where this sits against the alternatives",
+      note: "Price ranges for full penetration tests in Israel and for self-serve scanners are taken from public market research.",
+      sourceLabel: "Source for Israeli pentest pricing: Astra",
+      sourceUrl: "https://www.getastra.com/pentest-services/israel",
+      columns: ["", "Aegis", "Full pentest", "Self-serve scanner"],
+      rows: [
+        ["Price", "₪1,990 fixed", "₪15,000–150,000", "$9–29 / month"],
+        ["Human review of every finding", "Yes", "Yes", "No"],
+        ["Explained in the owner's language", "Yes", "Usually not", "No"],
+        ["Retest included", "Yes", "Sometimes", "No"],
+        ["Active exploitation attempts", "No", "Yes", "No"],
+        ["Time to results", "2–5 business days", "Weeks", "Instant"],
       ],
     },
     services: {
@@ -233,12 +277,12 @@ export const content = {
     builders: {
       eyebrow: "For solo founders",
       title: "Built something with Lovable, Base44, or Replit?",
-      body: "Veracode tested more than 100 AI models across 80 coding tasks: in 45% of cases the generated code shipped with a known security flaw. And in July 2025, Wiz researchers found a flaw in Base44 itself that let anyone bypass SSO and reach private apps using only the app_id visible in the URL. The same security check we run for any business covers exactly this.",
+      body: "A Symbiotic Security scan of 1,072 vibe-coded apps found that 98% had at least one security flaw. In July 2025, Wiz researchers found a flaw in Base44 itself that let anyone bypass SSO and reach private apps using only the app_id visible in the URL. The same security check we run for any business covers exactly this.",
       cta: "Check my app",
       sources: [
         {
-          label: "Veracode — GenAI Code Security Report",
-          url: "https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/",
+          label: "Symbiotic Security — scan of 1,072 apps",
+          url: "https://www.symbioticsec.ai/blog/we-scanned-1-072-vibe-coded-apps-98-had-security-flaws",
         },
         {
           label: "Wiz Research — Base44",
