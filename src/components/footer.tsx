@@ -62,6 +62,23 @@ export function Footer() {
               </svg>
               Clarvix
             </a>
+            <a
+              href={CONTACT.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex min-h-11 items-center gap-2 text-foreground/90 hover:text-primary"
+            >
+              {/* lucide-react has no Facebook glyph either; same inline pattern. */}
+              <svg
+                className="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M13.5 21v-7.7h2.6l.4-3h-3v-1.9c0-.87.24-1.46 1.5-1.46h1.6V4.28C15.9 4.19 15 4.1 13.9 4.1c-2.3 0-3.9 1.4-3.9 4v2.2H7.4v3h2.6V21h3.5z" />
+              </svg>
+              Aegis by Clarvix
+            </a>
           </div>
         </div>
 

@@ -393,4 +393,5 @@ export const CONTACT = {
   businessId: "321411589",
   businessIdLabel: { he: "עוסק פטור", en: "Registered business (Osek Patur)" },
   linkedin: "https://www.linkedin.com/company/115794167",
+  facebook: "https://www.facebook.com/profile.php?id=61594013503989",
 };

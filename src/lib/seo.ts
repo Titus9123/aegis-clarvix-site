@@ -92,7 +92,7 @@ export function siteJsonLd(lang: Lang) {
         // "Osek Patur" registration number — Clarvix's registered business
         // status in Israel.
         taxID: CONTACT.businessId,
-        sameAs: [CONTACT.linkedin, "https://clarvix.net"],
+        sameAs: [CONTACT.linkedin, CONTACT.facebook, "https://clarvix.net"],
         founder: { "@id": founderId },
         employee: { "@id": founderId },
         parentOrganization: {
