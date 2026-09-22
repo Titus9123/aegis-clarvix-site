@@ -3,16 +3,12 @@
  * client-side — both IDs are public identifiers, safe to hardcode; there is
  * no secret to protect by routing them through env vars).
  *
- * TODO(albert): replace both placeholders once created:
- *   - GA4_MEASUREMENT_ID: analytics.google.com → Admin → Data Streams → your
- *     web stream → Measurement ID (format "G-XXXXXXXXXX").
- *   - META_PIXEL_ID: business.facebook.com → Events Manager → Connect data
- *     sources → Web → Meta Pixel → the numeric ID (15-16 digits).
- * Until both are set, GaMetaScripts renders nothing and the track*() calls
- * below are silent no-ops — safe to ship without them.
+ * GA4 property "Aegis by Clarvix" and Meta Pixel "Aegis Website" created
+ * 2026-09-22, both scoped to aegis.clarvix.net specifically (not the shared
+ * clarvix.net GA4 property, to keep Aegis traffic unmixed).
  */
-export const GA4_MEASUREMENT_ID = "";
-export const META_PIXEL_ID = "";
+export const GA4_MEASUREMENT_ID = "G-RK7DMT428Y";
+export const META_PIXEL_ID = "2901792140191163";
 
 declare global {
   interface Window {
